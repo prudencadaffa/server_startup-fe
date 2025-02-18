@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Poppins, sanf-serif;
+}
+
+.auth-form {
+  @apply block w-full px-6 py-4 rounded-full text-gray-800 transition duration-300 ease-in-out;
+}
+
+.progress-striped {
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.15) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.15) 50%,
+    rgba(255, 255, 255, 0.15) 75%,
+    transparent 75%,
+    transparent
+  );
+  background-size: 1rem 1rem;
+}
+
+.project-header {
+  background-image: url("/auth-background.svg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-color: #3b41e3;
+  background-size: 250px;
+  height: 350px;
+}
+
+.dashboard-header {
+  background-image: url("/auth-background.svg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-color: #3b41e3;
+  background-size: 250px;
+  height: 100px;
+}
+
+.header__bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 640px;
+  background-image: url("/auth-background.svg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-color: #3b41e3;
+  transform: skewY(-6deg);
+  transform-origin: top left;
+}
+
+.cta-clip {
+  position: relative;
+  top: 200px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background-position: top right;
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  transform: skewY(4deg);
+  transform-origin: bottom right;
+}
+
+.call-to-action {
+  background-image: url("/auth-background.svg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 450px;
+}
+
+.card-project {
+  transition: all 0.3s ease 0s, opacity 0.5s cubic-bezier(0.5, 0, 0, 1) 1ms;
+  max-height: 445px;
+  overflow: hidden;
+}
+.card-project .button-cta {
+  opacity: 0;
+  transition: all 300ms ease;
+}
+.card-project:hover {
+  box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.15);
+}
+.card-project:hover .button-cta {
+  opacity: 1;
+  transition: all 300ms ease;
+}
+.card-project:hover .progress-bar,
+.card-project:hover .progress-info {
+  opacity: 0;
+  height: 0px;
+  margin: 0px;
+  padding: 0px;
+  transition: all 300ms ease;
+}
+
+footer {
+  z-index: inherit;
+}
+
+.hero-underline {
+  text-decoration-color: #1abc9c;
+}
+
+.testimonial-user {
+  opacity: 0.4;
+}
+.testimonial-user.active {
+  opacity: 1;
+  border: 5px solid #fff;
+  box-shadow: 0 0 0 1px #3b41e3;
+}
+
+.list-check li {
+  background: url("/icon-checklist.svg") no-repeat left 8px;
+  padding: 6px 0px 3px 28px;
+}
+
+.item-thumbnail:hover {
+  background-color: #ff872e;
+  border-radius: 20px;
+}
+.item-thumbnail:hover:after {
+  position: absolute;
+  top: 38%;
+  left: 41%;
+  content: url("/icon-thumbnail-hover.svg");
+}
+.item-thumbnail:hover img {
+  opacity: 0.3;
+}
+
+.auth-page {
+  background-color: #3b41e3;
+  background-image: url("/auth-background.svg");
+  background-position: top right;
+  background-repeat: no-repeat;
+}
