@@ -4,7 +4,7 @@
 Web Donasi ini dibuat menggunakan ReactjS.
 ## 🛠️ **Instalasi & Setup**
 ### 1️⃣ **Clone Repository**
-git clone https://github.com/prudencadaffa/web-donasi-fe.git <br>
+git clone https://github.com/prudencadaffa/server_startup-fe.git <br>
 cd web-donasi-fe
 ### 2️⃣ Pastikan Node.js Sudah Terinstal ###
 node -v
